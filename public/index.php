@@ -5,3 +5,5 @@ require_once implode(DIRECTORY_SEPARATOR, [
     "vendor",
     "autoload.php",
 ]);
+
+(new Looxa\Factorio\HelloWorld())->sayHello();
