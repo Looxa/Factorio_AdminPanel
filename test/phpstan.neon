@@ -1,0 +1,11 @@
+parameters:
+	level: 6
+	paths:
+		- ../src
+		- ../public
+		- ../test
+
+	excludePaths:
+		- ../vendor
+		- ../var
+		- ../data
