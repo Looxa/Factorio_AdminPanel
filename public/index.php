@@ -1,4 +1,9 @@
 <?php
+
+declare(strict_types=1);
+
+use Looxa\Factorio\Bootstrap\Loader;
+
 $root = dirname(__DIR__);
 require_once implode(DIRECTORY_SEPARATOR, [
     $root,
@@ -6,4 +11,5 @@ require_once implode(DIRECTORY_SEPARATOR, [
     "autoload.php",
 ]);
 
-(new Looxa\Factorio\HelloWorld())->sayHello();
+$app = Loader::load($root);
+$app->run();

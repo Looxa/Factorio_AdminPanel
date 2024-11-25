@@ -5,10 +5,18 @@
   "autoload": {
     "psr-4": {
       "Looxa\\Factorio\\": "src/"
-    }
+    },
+    "files": [
+      "src/Provider/PackageProvider.php"
+    ]
   },
   "require": {
-    "php": ">=8.3.0"
+    "php": ">=8.3.0",
+    "laminas/laminas-config-aggregator": "1.15",
+    "slim/slim": "^4.14",
+    "slim/psr7": "^1.7",
+    "php-di/php-di": "^7.0"
+
   },
   "scripts": {
     "test": "phpunit -c test/phpunit.xml --colors=always",
